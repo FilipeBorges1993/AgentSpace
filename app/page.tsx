@@ -6,6 +6,7 @@ import Agents from "@/components/Agents";
 import TraceHistory from "@/components/TraceHistory";
 import PlanGallery from "@/components/PlanGallery";
 import Footer from "@/components/Footer";
+import ChatDebug from "@/components/ChatDebug";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
@@ -57,6 +58,8 @@ export default function Home() {
           />
         </motion.div>
       </div>
+
+      <ChatDebug />
     </main>
   );
 }
