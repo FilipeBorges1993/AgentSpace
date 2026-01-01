@@ -8,6 +8,7 @@ import PlanGallery from "@/components/PlanGallery";
 import Footer from "@/components/Footer";
 import ChatDebug from "@/components/ChatDebug";
 import Gallery from "@/components/Gallery";
+import ScrollBackground from "@/components/ScrollBackground";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
@@ -88,11 +89,11 @@ export default function Home() {
         transition={{ duration: 0.6, ease: "easeOut" }}
       >
         <Image
-          src="/Spy Explore Sticker by The Peter’s Brand.gif"
+          src="/Look Drawing Sticker.gif"
           alt="Art Brushing Sticker"
           width={100}
           height={200}
-          className="mt-[-120px]"
+          className="mt-[-100px] "
           unoptimized
         />
       </motion.div>
