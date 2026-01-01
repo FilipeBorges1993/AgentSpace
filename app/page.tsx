@@ -7,6 +7,7 @@ import TraceHistory from "@/components/TraceHistory";
 import PlanGallery from "@/components/PlanGallery";
 import Footer from "@/components/Footer";
 import ChatDebug from "@/components/ChatDebug";
+import Gallery from "@/components/Gallery";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
@@ -60,6 +61,43 @@ export default function Home() {
       </div>
 
       <ChatDebug />
+
+      <div className="w-full max-w-4xl px-4 py-8 flex justify-center mt-[300px]">
+        <motion.div
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: false, amount: 0.3 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+        >
+          <Image
+            src="/connector3.svg"
+            alt="Connector"
+            width={900}
+            height={20}
+            className="w-[500px] h-auto hidden md:block mr-[5%]"
+          />
+        </motion.div>
+      </div>
+
+      {/* Art Brushing Sticker */}
+      <motion.div
+        className="py-1"
+        initial={{ opacity: 0, scale: 0.8 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{ once: false, amount: 0.3 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+      >
+        <Image
+          src="/Spy Explore Sticker by The Peter’s Brand.gif"
+          alt="Art Brushing Sticker"
+          width={100}
+          height={200}
+          className="mt-[-120px]"
+          unoptimized
+        />
+      </motion.div>
+
+      <Gallery />
     </main>
   );
 }
