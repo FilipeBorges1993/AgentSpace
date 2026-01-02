@@ -7,7 +7,7 @@ export default function LinksSection() {
   const links = [
     {
       name: "This is an Open source project\nso can you help us ?!",
-      url: "https://github.com/BorisCorp",
+      url: "https://github.com/FilipeBorges1993/ClaudeSpace",
       icon: "/white/Git Sticker.gif",
       position: "self-start",
       rotate: -5,
@@ -23,7 +23,7 @@ export default function LinksSection() {
     },
     {
       name: "Donate me please!\nI'm broke!",
-      url: "https://donate.boriscorp.com",
+      url: "https://github.com/sponsors/FilipeBorges1993",
       icon: "/white/Level Up Sticker Sticker by Percolate Galactic.gif",
       position: "self-end ",
       rotate: 5,

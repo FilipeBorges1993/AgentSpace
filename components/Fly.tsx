@@ -12,13 +12,13 @@ export default function Fly() {
   const scrollRef = useRef(0);
   const animationRef = useRef<number | null>(null);
 
-  const FLEE_DISTANCE = 100;
+  const FLEE_DISTANCE = 250;
   const FLEE_SPEED = 9;
   const WANDER_SPEED = 1;
   const FLY_SIZE = 25;
   const SCROLL_DRIFT = 0.01;
   const EDGE_MARGIN = 500; // Prefer staying within this margin from edges
-  const CENTER_REPEL = 0; // Force pushing fly away from center content
+  const CENTER_REPEL = 0.1; // Force pushing fly away from center content
 
   // Compute if in dark section
   const isInDarkSection = useMemo(() => {

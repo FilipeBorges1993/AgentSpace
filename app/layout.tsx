@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import RandomBackground from "@/components/RandomBackground";
 
 const excalifont = localFont({
   src: "./fonts/Excalifont-Regular.woff2",
@@ -22,8 +23,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${excalifont.variable} font-sans antialiased bg-[#eef0f3] text-gray-800`}
+        className={`${excalifont.variable} font-sans antialiased text-gray-800`}
       >
+        <RandomBackground />
         {children}
       </body>
     </html>
